@@ -1,69 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/Css/nav-bar.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/Css/styles.css">
+    <link rel="stylesheet" href="/assets/Css/reset.css">
+    <link rel="stylesheet" href="/assets/Css/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e789d7b88.js" crossorigin="anonymous"></script>
-    <title>Currículo do João</title>
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <a class="navbar-brand" href="https://github.com/Joaovstype">Portfólio</a>
-            <button class="navbar-toggle" id="navbar-toggle">☰</button>
-            <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="#github"><a href="" class="icon"><i class="fa-brands fa-github"></i></a></a></li>
-                <li><a href="#linkedin"> <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a></a></li>
-                <li><a href="#portfolio"></a><a href="" class="icon"><i class="fa-solid fa-square-parking"></i></a></li>
-                <button id="toggle-dark-mode"><i class="fa-solid fa-moon"></i></button>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="cover">
-            <div class="foto-perfil" id="foto-perfil">
-                <img src="/assets/img/WhatsApp Image 2024-06-01 at 11.35.14.jpeg" alt="foto-perfil">
-                <div class="btn-cv">
-                    <a href="" download="">
-                        <button class="btn-curriculum">Download CV 
-                            <i class="fa-solid fa-file-arrow-down"></i>
-                        </button>
+    <nav class="navbar-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <div class="header-logo-img">
+                    <img src="/assets/img/WhatsApp Image 2024-06-01 at 11.35.14.jpeg" alt="Joao Logo Imagem" class="header_logo-img">
+        
+                </div>
+                <span class="header-logo-span">João Victor</span>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <ul class="header-links">
+                <li class="header-link-wrapper">
+                    <a href="./" class="header-link">Home</a>
+                </li>
+                <li class="header-link-wrapper">
+                    <a href="./#about" class="header-link">Sobre</a>
+                </li>
+                <li class="header-link-wrapper">
+                    <a href="./#projects" class="header-link">Projetos</a>
+                </li>
+                <li class="header-link-wrapper">
+                    <a href="./#contact" class="header-link">Contato</a>
+                </li>
+            </ul>
+            <div class="header-main-ham-content">
+                <img src="" alt="hamburguer menu" class="header-ham-logo-menu">
+                <img src="" alt="hamburguer menu" class="header-ham-logo-menu-close">
+            </div>
+        </div>
+
+        <div class="header-menu-ham">
+            <div class="header-menu-ham-content">
+                <ul class="header-menu-ham-links">
+                    <li class="header-link-menu-ham">
+                        <a href="./" class="header-link">Home</a>
+                    </li>
+                    <li class="header-link-menu-ham">
+                        <a href="./#about" class="header-link">Sobre</a>
+                    </li>
+                    <li class="header-link-menu-ham">
+                        <a href="./#projects" class="header-link">Projetos</a>
+                    </li>
+                    <li class="header-link-menu-ham">
+                        <a href="./#contact" class="header-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="home-content">
+            
+            <h1 class="primary-info">Ola, sou o João</h1>
+            
+            <div class="personal-info">
+                <p class="text-primary">Desenvolvedor Web orientado a gerar soluções eficazes para Websites e Aplicações <br>Web que levam ao sucesso do produto como um todo.</p>
+            </div>
+
+            <div class="btn-link-projects">
+                <button href="./#projects" class="btn btn--bg">Projects</button>
+            </div>
+
+        </div>
+
+        <div class="home-socials">
+            <aside class="left-bar-home">
+                <div class="home-social">
+                    <a href="" class="home-social-icon-link">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
-            </div> 
 
-            <div id="home-show">
-                <h1 class="name">João Victor Barbosa</h1>
-                <p class="description">Desenvolvedor Backend | Java</p>
-                <p class="location"><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>Registro - SP</p>
-            </div>
+                <div class="home-social">
+                    <a href="" class="home-social-icon-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
 
-            <div class="icons">
-                <i class="fa-brands fa-java"></i>
-                <i class="fa-brands fa-angular"></i>
-                <i class="fa-solid fa-database"></i>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3"></i>
-            </div>
+                <div class="home-social">
+                    <a href="" class="home-social-icon-link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
 
-            <div class="about-me">
-                <p>Sou um entusiasta da aprendizagem, conhecimento nutre minha passagem nessa terra.</p>
-            </div>
-        </section>
+                <div class="home-social">
+                    <a href="" class="home-social-icon-link">
+                        <i class="fa-solid fa-seedling"></i>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </section>
 
-        <section id="courses" class="courses">
-            <h2>Meus Cursos</h2>
-            <ul>
-                <li>Curso 1: Descrição do Curso 1</li>
-                <li>Curso 2: Descrição do Curso 2</li>
-                <li>Curso 3: Descrição do Curso 3</li>
-            </ul>
-        </section>
-    </main>  
-
-    <script src="/JavaScript/index.js"></script>
 </body>
 </html>
