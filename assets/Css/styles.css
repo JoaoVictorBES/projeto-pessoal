@@ -32,7 +32,9 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    text-decoration: none;
 }
 
 .header-logo{
@@ -40,12 +42,18 @@
     align-items: center;
 }
 
+.header-main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    font-size: 12px;
+}
+
 .header_logo-img{
     width: 80px; 
     height: 80px; 
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 .header-logo-span{
@@ -63,12 +71,23 @@
     color: black;
     font-size:2rem;
     text-decoration: none;
+    margin-right: 56px;
 }
 
 .header-links li {
     text-decoration: none;
     font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: black; 
+}
+
+.header-links a:hover {
+    color: #5bec07; /* Cor ao passar o mouse, opcional */
 }
 
 /* Seção home */
@@ -79,12 +98,91 @@
     top: 0;
     left: 0;
     width: 100%;
+    justify-content: center;
+    background-image: url('/assets/img/top-view-creative-background-with-white-shapes.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.831), rgba(255, 255, 255, 0.621)), url('/assets/img/top-view-creative-background-with-white-shapes.jpg');
+    background-size: cover;
+    background-blend-mode: lighten;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.home-content{
+    text-align: center;
+    width: 100%;
+    margin-top: rem;
+}
+
+
+
+.home-socials{
+    /*position: fixed;
+    top: 50%;
+    left: 0;
+    display: block;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1000;
+    justify-content: center;*/
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1000;
+    margin-top: 2px;
+}
+
+.home-social{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 10px;
+}
+
+
+.home-social-icon-link{
+    font-size: 45px; /* Tamanho dos ícones */
+    color: #333
 }
 
 .primary-info{
     text-align: center;
+    margin-bottom: 50px;
+    font-size: 5rem;
 }
 
 .personal-info{
+    margin: 3rem auto 0 auto;
     text-align: center;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
+
+.button-projects{
+    margin-top: 4rem;
+}
+
+.button {
+    background-color: #28a745; /* Cor verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-projects .button:hover {
+    background-color: #218838; /* Cor verde mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+
+
+body{
+    text-align:center;
+    background-color:#ffcc8e;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+  
