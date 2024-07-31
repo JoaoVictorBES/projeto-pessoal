@@ -77,7 +77,7 @@
             </div>
 
             <div class="button-projects">
-                <button href="#" class="button"><b>PROJETOS</b></button>
+                <button href="#" class="button-home"><b>PROJETOS</b></button>
             </div>
 
         </div>
@@ -117,12 +117,12 @@
             <h2 class="heading-title-main">
                 Sobre Mim
             </h2>
-            <div class="under-line-content">
+            <div class="under-line-content-about">
                 <span class="under-line">
                 
                 </span>
             </div>
-            <span class="heading-title-sub">
+            <span class="heading-title-sub-about">
                 
                 <p>Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais principalmente em termos de programação e tecnologia</p>
           
@@ -131,7 +131,7 @@
         <div class="about-content">
 
             <div class="about-content-main">
-                <h3 class="abou-content-title">Mais sobre mim!</h3>
+                <h3 class="about-content-title">Mais sobre mim!</h3>
                 <div class="about-content-details">
                     <p class="about-content-details-text">Sou um desenvolvedor Web focado em Frontend, construindo e gerenciando o Front-end de sites e aplicações Web que levam ao sucesso do produto geral. Confira alguns dos meus trabalhos na seção Projetos.</p>
                     <p class="about-content-details-text">Também gosto de compartilhar conteúdo relacionado ao que aprendi ao longo dos anos em Desenvolvimento Web para que possa ajudar outras pessoas da Comunidade de Desenvolvimento. Sinta-se à vontade para se conectar ou me seguir no Linkedin e no Instagram, onde posto conteúdo útil relacionado ao desenvolvimento e programação web</p>
@@ -143,13 +143,16 @@
             <div class="about-content-skills">
                 <h3 class="my-skills"> Minhas Habilidades</h3>
                 <div class="skills-content-main">
-                    <div class="skills">JAVA</div>
-                    <div class="skills">Angular</div>
-                    <div class="skills">HTML</div>
-                    <div class="skills">CSS</div>
-                    <div class="skills">Github</div>
-                    <div class="skills">Wordpress</div>
-                    <div class="skills">JavaScript</div>
+                    <ul class="skills-skill">
+                        <li class="skills">JAVA</li>
+                        <li class="skills">Angular</li>
+                        <li class="skills">HTML</li>
+                        <li class="skills">CSS</li>
+                        <li class="skills">Github</li>
+                        <li class="skills">Wordpress</li>
+                        <li class="skills">JavaScript</li>
+                    </ul>
+                    
                 </div>
             </div>
                 
@@ -157,5 +160,118 @@
         </div>
 
     </section>
+
+    <section class="projects" id="projects">
+        <div class="heading-title-projects">
+            <h2>PROJETOS</h2>
+        </div>
+        <div class="under-line-content-projects">
+            <span class="under-line"></span>
+        </div>
+        <span class="heading-title-sub-projects"> 
+            <p>Aqui você encontrará mais informações sobre projetos pessoais </p>
+        </span>
+
+        <div class="projects-content">
+            <div class="box-projects">
+                <div class="info-projects">
+                    <img src="/assets/img/project-mockup-example.jpeg" alt="img-modelo" class="img-projects">
+                    <div class="info-projects-main">
+                        <h3>Memoteca</h3>
+                        <p class="projeto-txt">Neste projeto, desenvolvi um sistema de notas que permite aos usuários criar, editar, remover e listar suas anotações de maneira eficiente e intuitiva. <br> Utilizando Java Spring Boot no backend e Angular no frontend, implementei uma aplicação completa baseada no padrão Rest API. </p>
+                        <button class="project-btn">Memoteca</button>
+                    </div>
+                </div>
+                <div class="info-projects">
+                    <img src="/assets/img/project-mockup-example.jpeg" alt="img-modelo" class="img-projects">
+                    <div class="info-projects-main">
+                        <h3>DS List</h3>
+                        <p class="projeto-txt">Neste projeto, desenvolvi um sistema de notas que permite aos usuários criar, editar, remover e listar suas anotações de maneira eficiente e intuitiva. <br> Utilizando Java Spring Boot no backend e Angular no frontend, implementei uma aplicação completa baseada no padrão Rest API. </p>
+                        <button class="project-btn">DS List</button>
+                    </div>
+                </div>
+                <div class="info-projects">
+                    <img src="/assets/img/project-mockup-example.jpeg" alt="img-modelo" class="img-projects">
+                    <div class="info-projects-main">
+                        <h3>Game List</h3>
+                        <p class="projeto-txt">Neste projeto, desenvolvi um sistema de notas que permite aos usuários criar, editar, remover e listar suas anotações de maneira eficiente e intuitiva. <br> Utilizando Java Spring Boot no backend e Angular no frontend, implementei uma aplicação completa baseada no padrão Rest API. </p>
+                        <button class="project-btn">Game List</button>
+                    </div>
+                </div>
+                <div class="info-projects">
+                    <img src="/assets/img/project-mockup-example.jpeg" alt="img-modelo" class="img-projects">
+                    <div class="info-projects-main">
+                        <h3>Game List</h3>
+                        <p class="projeto-txt">Neste projeto, desenvolvi um sistema de notas que permite aos usuários criar, editar, remover e listar suas anotações de maneira eficiente e intuitiva. <br> Utilizando Java Spring Boot no backend e Angular no frontend, implementei uma aplicação completa baseada no padrão Rest API. </p>
+                        <button class="project-btn">Game List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading-title-contact">
+            <h2>CONTATO</h2>
+        </div>
+        <div class="under-line-content-contact">
+            <span class="under-line"></span>
+        </div>
+        <span class="heading-title-sub-contact"> 
+            <p>Sinta-se à vontade para entrar em contato através do formulário abaixo e eu responderei o mais rápido possível</p>
+        </span>
+
+        <div class="contact-form-box">
+            <div class="contact-form-content">
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Seu Nome" required class="input-form">
+                    <input type="email" name="email" placeholder="Seu Email" required class="input-form">
+                    <textarea name="message" placeholder="Sua Mensagem" required class="input-form"></textarea>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="main-footer-content">
+            <div class="main-footer-upper">
+                <h2 class="footer-row">
+                    <span>Social</span>
+                </h2>
+            </div>
+    
+            <div class="footer-social-link">
+                <a href="" target="_blank" rel="noreferrer">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+
+            <div class="footer-description">
+                <h2>JOÃO VICTOR</h2>
+                <p>Desenvolvedor backend focado no desenvolvimento de sistemas com fácil manutenção e clean code</p>
+            </div>
+
+            <div class="footer-low">
+                
+                 © Copyright 
+          
+                <script>document.write(new Date().getFullYear());</script>
+
+                . Made by 
+
+                <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+            </div>
+        </div> 
+    </footer>
 </body>
 </html>
