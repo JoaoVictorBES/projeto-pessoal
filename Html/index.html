@@ -151,12 +151,10 @@
                         <li class="skills">Github</li>
                         <li class="skills">Wordpress</li>
                         <li class="skills">JavaScript</li>
+                        <li class="skills">MySQL</li>
                     </ul>
-                    
                 </div>
-            </div>
-                
-            
+            </div>           
         </div>
 
     </section>
@@ -222,12 +220,22 @@
         </span>
 
         <div class="contact-form-box">
-            <div class="contact-form-content">
-                <form class="contact-form">
-                    <input type="text" name="name" placeholder="Seu Nome" required class="input-form">
-                    <input type="email" name="email" placeholder="Seu Email" required class="input-form">
-                    <textarea name="message" placeholder="Sua Mensagem" required class="input-form"></textarea>
-                    <button type="submit" class="button">Enviar</button>
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/xldrbooj" class="contact-form" method="POST">
+                    <input type="hidden" name="form-name" value="form 1">
+                    <div class="contact-form-field">
+                        <label for="Nome" class="contact-form-label">Nome</label>
+                        <input type="text" class="contact-form-input" name="name" id="name" placeholder="Nome">
+                    </div>
+                    <div class="contact-form-field">
+                        <label for="Email" class="contact-form-label">Email</label>
+                        <input type="email" class="contact-form-input" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="contact-form-field">
+                        <label for="Mensagem" class="contact-form-label">Sua Mensagem</label>
+                        <textarea name="message" id="message" placeholder="Sua Mensagem" class="contact-form-input" required cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="button-form">Enviar</button>
                 </form>
             </div>
         </div>
@@ -236,29 +244,28 @@
     <footer class="main-footer">
         <div class="main-footer-content">
             <div class="main-footer-upper">
+                <div class="footer-description">
+                    <h2>JOÃO VICTOR</h2>
+                    <p class="footer-description-p">Desenvolvedor backend focado no desenvolvimento de sistemas com fácil manutenção e clean code</p>
+                </div>
                 <h2 class="footer-row">
                     <span>Social</span>
                 </h2>
-            </div>
-    
-            <div class="footer-social-link">
-                <a href="" target="_blank" rel="noreferrer">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-                <a href="" target="_blank" rel="noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="" target="_blank" rel="noreferrer">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="" target="_blank" rel="noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-
-            <div class="footer-description">
-                <h2>JOÃO VICTOR</h2>
-                <p>Desenvolvedor backend focado no desenvolvimento de sistemas com fácil manutenção e clean code</p>
+                <div class="footer-social-link">
+                    <a href="" target="_blank" rel="noreferrer">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                
             </div>
 
             <div class="footer-low">

@@ -15,6 +15,21 @@ section{
     background-color: #f5f5f5; /* Cor de fundo padrão (opcional) */
 }
 
+@media (max-width: 768px) {
+    .header-main {
+        display: none; /* Esconde os links de navegação e outros elementos da header-main */
+    }
+
+    .header-main-ham-content {
+        display: block; /* Mostra o ícone de menu hambúrguer */
+    }
+
+    .header-menu-ham {
+        display: none; /* Esconde o menu dropdown inicialmente */
+    }
+}
+
+
 /* Escondendo o menu hambugurer */
 .header-main-ham-content{
     display: none;
@@ -36,6 +51,8 @@ section{
     }
 }
 /* Aqui acaba o esconderijo do hamburguer */
+
+
 
 /* Header */
 .navbar-header{
@@ -452,33 +469,61 @@ h3{
     width: 100%;
 }
 
-.contact-form {
+.contact-form-container {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 5px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80rem; 
+    width: 95%;
+    margin: 5rem auto 0 auto;
+}
+
+.contact-form{
+    margin-bottom: 4rem;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.contact-form-field {
     display: flex;
     background-color: #f4f4f4; /* Cor de fundo da seção */
     padding: 2rem; /* Espaçamento interno */
     flex-direction: column; /* Alinha os elementos em coluna */
-    gap: 1rem; 
+    margin-bottom: 4rem;
 }
 
-.contact-form-content {
-    background-color: #fff;
+.contact-form-label{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.contact-form-input{
     padding: 2rem;
-    border-radius: 8px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px; 
     width: 100%;
+    border: 1px solid;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
-.contact-form-content h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
-    text-align: center;
-}
-
-.contact-form textarea {
-    resize: vertical;
-    height: 150px; /* Altura padrão */
+.button-form{
+    background-color:#70a253; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease-in-out; /* Transição suave para hover */
+    align-self: center; /* Centraliza o botão */
+    margin-top: 1rem; 
+    padding: 20px 90px;
 }
 
 .button {
@@ -514,7 +559,79 @@ h3{
     padding-bottom: 2rem;
 }
 
-.input-form{
-    background-color: #d1cbcb ;
-    padding: 15px 40px;
+/* Seção footer */
+
+.footer{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.main-footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.main-footer-content{
+    display: block;
+    max-width: 120rem;
+    margin:auto;
+    width: 92%;
+    justify-content: center;
+}
+
+.main-footer-upper{
+    justify-content: space-between;
+    padding: 8rem 0;
+}
+
+.footer-row{
+
+}
+
+.footer-social-link{
+    margin-top: 2rem;
+}
+
+.footer-description{
+    width: 40%;
+    order: 1;
+    max-width: 50rem;
+    text-align: left;
+
+}
+
+.footer-description-p{
+    margin-top: 2rem;
+    color: #eee;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+.footer-low{
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: center;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
