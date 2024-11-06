@@ -1,7 +1,7 @@
 *, *::after, *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
     font-family: inherit;
 }
 
@@ -41,21 +41,67 @@ h3{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+/*
 @media (max-width: 768px) {
     .header-main {
-        display: none; /* Esconde os links de navegação e outros elementos da header-main */
+        display: none; 
     }
 
     .header-main-ham-content {
-        display: block; /* Mostra o ícone de menu hambúrguer */
+        display: block; /
     }
 
     .header-menu-ham {
-        display: none; /* Esconde o menu dropdown inicialmente */
+        display: none; /
     }
 }
 
+/* Menu hamburguer */
+.header-main-ham-content {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-main {
+        display: none;
+    }
+
+    .header-main-ham-content {
+        display: block;
+    }
+
+    .header-menu-ham {
+        display: block;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-menu-ham-links {
+        list-style: none;
+        padding: 1rem;
+    }
+
+    .header-link-menu-ham {
+        padding: 1rem 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header-link-menu-ham a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .header-link-menu-ham a:hover {
+        color: #70a253;
+    }
+}
 
 /* Escondendo o menu hambugurer */
 .header-main-ham-content{
@@ -83,6 +129,7 @@ h3{
 
 /* Header */
 .navbar-header{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -117,12 +164,16 @@ h3{
 }
 
 .header-logo-span{
-    font-size: 1.4rem;
+    /*font-size: 1.4rem;
     font-weight: bold;
     margin-left: 20px;
     align-items: inherit;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+*/
+font-size: 1.2rem;
+margin-left: 15px;
+ }
+
 
 .header-links {
     list-style-type: none;
@@ -196,6 +247,27 @@ h3{
     top: calc(50% + 50px); 
 }
 
+@media (max-width: 768px) {
+    .home-socials {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        box-shadow: none;
+        display: none;
+    }
+
+    .home-social-icon-link {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        display: block;
+    }
+
+}
+
 .home-social{
     width: 5rem;
     height: 5rem;
@@ -259,7 +331,6 @@ body{
     text-align:center;
     background-color:#ffcc8e;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
 /* Seção about */
@@ -283,6 +354,8 @@ body{
     gap: 2rem; 
     padding: 0 2rem;
     padding-top: 6rem;
+    
+
 }
 
 .about-content-main{
@@ -397,6 +470,12 @@ h3{
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 12rem;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
 }
 
 
